@@ -4,16 +4,16 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 public class LabaThree {
     public static void main(String[] args) {
-        //task_1("abcdefghijklmnopqrstuv18340");
-        //task_2("e02fd0e4-00fd-090A-ca30-0d00a0038ba0");
-        //task_3("aE:dC:cA:56:76:54");
-        //task_4("http://www.a.com");
-        //task_5("#000000");
-        //task_6("31/12/1600");
-        //task_7("hi@als");
-        //task_8("155.1.1.1");
-        //task_9("AAoepass");
-        //task_10("123450");
+//        task_1("abcdefghijklmnopqrstuv183401");
+        task_2("e02fd0e4-00fd-090A-ca30-0d00a0038ba0");
+        task_3("aE:dC:cA:56:76:54");
+        task_4("http://www.a.com");
+        task_5("#000000");
+        task_6("31/12/1600");
+        task_7("hi@als");
+        task_8("155.1.1.1");
+        task_9("AAoepass");
+        task_10("123450");
         task_11("112.1 EU");
         task_12("2+");
         task_13("2+(()");
@@ -52,7 +52,7 @@ public class LabaThree {
         System.out.println(b);
     }
     static void task_6(String a) {
-        Pattern pt = Pattern.compile("(0?[1-9]|[12][//d]|3[01])/(0?[1-9]|1[0-2])/(1?[6-9]|[2-9]\\d)\\d\\d");
+        Pattern pt = Pattern.compile("(0?[1-9]|[12][\\d]|3[01])/(0?[1-9]|1[0-2])/(1?[6-9]|[2-9]\\d)\\d\\d");
         Matcher m1 = pt.matcher(a);
         boolean b = m1.matches();
         System.out.println(b);
