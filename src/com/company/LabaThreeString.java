@@ -105,7 +105,61 @@ public class LabaThreeString {
     }
 
     static void task_4(){
-        
+        Scanner sc = new Scanner(System.in);
+        Scanner sc1 = new Scanner(System.in);
+        System.out.println("Введите количество n слов: ");
+        int n = sc.nextInt();
+        int min = 100000;
+        String[] fulltext = new String[n];
+        String swap = "";
+        for (int i = 0; i < n; i++ ){
+            System.out.printf("\nСлово №%s\n", (i+1));
+            fulltext[i] = sc1.nextLine();
+        }
+
+        //Сортировка расчёской
+        double factor = 1.247; // Фактор уменьшения
+        int step = n-1;
+
+        while (step >= 1) {
+            for (int i = 0; i + step < n; ++i) {
+                if (fulltext[i].length() <= min ) {
+                    swap = fulltext[i];
+                    min = fulltext[i].length();
+                }
+            }
+            step /= factor;
+        }
+        System.out.println(swap + ": " + min);
+    }
+    static void task_5(){
+        Scanner sc = new Scanner(System.in);
+        Scanner sc1 = new Scanner(System.in);
+        System.out.println("Введите количество n слов: ");
+        String [] strword = {"A", "E", "I", "O", "U", "Y"};
+        int n = sc.nextInt();
+        int min = 100000;
+        String[] fulltext = new String[n];
+        String swap = "";
+        for (int i = 0; i < n; i++ ){
+            System.out.printf("\nСлово №%s\n", (i+1));
+            fulltext[i] = sc1.nextLine();
+        }
+
+        //Сортировка расчёской
+        double factor = 1.247; // Фактор уменьшения
+        int step = n-1;
+
+        while (step >= 1) {
+            for (int i = 0; i + step < n; ++i) {
+                if (fulltext[i].length() <= min ) {
+                    swap = fulltext[i];
+                    min = fulltext[i].length();
+                }
+            }
+            step /= factor;
+        }
+        System.out.println(swap + ": " + min);
     }
 
     }
