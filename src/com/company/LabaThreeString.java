@@ -21,7 +21,7 @@ public class LabaThreeString {
             if(task == ""){break;}
             switch (task){
                 case "10": task_10("I like Java!!!");break;
-                case "11": task_11(23,17);break;
+                case "11": task_11(25,17);break;
                 case "12": task_12();break;
                 case "13": task_13();break;
                 case "14": task_14();break;
