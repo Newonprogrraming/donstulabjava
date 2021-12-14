@@ -12,6 +12,7 @@ import java.util.regex.Matcher;
 public class LabaThreeString {
     public static void main(String[] args) {
         task_9();
+        System.out.println("~Вторая часть~");
         boolean check = true;
         while (check){
             Scanner sc = new Scanner(System.in);
